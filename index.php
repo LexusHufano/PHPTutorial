@@ -57,21 +57,58 @@
 
     // sayHello('lexus');
 
-    function fizzBuzz($numbers){
-        for($i = 1; $i <= $numbers; $i++) {
-            if(($i % 3 === 0) && ($i % 5 === 0)){
-                echo 'FizzBuzz' . '</br>';
-            } elseif($i % 5 === 0) {
-                echo 'Buzz' . '</br>';
-            } elseif($i % 3 === 0) {
-                echo 'Fizz' . '</br>';
-            } else {
-                echo $i . '</br>';
-            }
-        }
-    }
+    // function fizzBuzz($numbers){
+    //     for($i = 1; $i <= $numbers; $i++) {
+    //         if(($i % 3 === 0) && ($i % 5 === 0)){
+    //             echo 'FizzBuzz' . '</br>';
+    //         } elseif($i % 5 === 0) {
+    //             echo 'Buzz' . '</br>';
+    //         } elseif($i % 3 === 0) {
+    //             echo 'Fizz' . '</br>';
+    //         } else {
+    //             echo $i . '</br>';
+    //         }
+    //     }
+    // }
 
-    fizzBuzz(30);
+    // fizzBuzz(30);
+
+    // Variable Scope 
+
+    // local vars
+
+    // function sayHello(){
+    //     $name = 'lexus';
+
+    //     echo "Good morning $name";
+    // }
+
+    // sayHello();
+    
+    // Global vars
+
+    // $name = 'lexus';
+
+    // function sayHello(){
+    //     global $name;
+        
+    //     echo "Hello $name welcome";
+    // }
+
+    // sayHello();
+
+    // -------------------
+
+    // $name = 'lexus';
+
+    // function sayHi($name){
+
+    //     $name = 'hufano';
+    //     echo "Hi $name welcome.";
+    // }
+
+
+    // sayHi($name);
 ?>
 
 
@@ -85,7 +122,7 @@
 </head>
 <body>
     
-    <h1>This is the products that price is greater than PHP15,000</h1>
+    <!-- <h1>This is the products that price is greater than PHP15,000</h1>
 
     <div>
         <ul>
@@ -97,7 +134,7 @@
                 <?php } ?>
             <?php } ?>
         </ul>
-    </div>
+    </div> -->
     
 </body>
 </html>

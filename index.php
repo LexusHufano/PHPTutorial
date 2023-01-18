@@ -109,6 +109,52 @@
 
 
     // sayHi($name);
+
+    // Associative Arrays
+
+    $books = [
+        [
+            'name' => 'Ibong adarna',
+            'author' => 'John Doe',
+            'purchaseURL' => 'http://example.com'
+        ],
+        [
+            'name' => 'Biyag ni Lamang',
+            'author' => 'Jane Doe',
+            'purchaseURL' => 'http://example.com'
+        ],
+        [
+            'name' => 'Kwentong pagong',
+            'author' => 'Lexus Hufano',
+            'purchaseURL' => 'http://example.com'
+        ],
+        [
+            'name' => 'Kwentong kambing',
+            'author' => 'Lexus Hufano',
+            'purchaseURL' => 'http://example.com'
+        ]
+    ];
+
+    // Filtering function
+
+    // function filter($items, $fn){
+        
+    //     $filteredArray = [];
+
+    //     foreach ($items as $item) {
+    //         if ($fn($item)) {
+    //             $filteredArray[] = $item;
+    //         }
+    //     }
+
+    //     return $filteredArray;
+    // }
+
+    $filteredBooks = array_filter($books, function($book) {
+        print_r($book);
+        return $book['author'] === 'John Doe';
+    })
+
 ?>
 
 
@@ -128,6 +174,19 @@
             <?php } ?>
         </ul>
     </div> -->
+
+    <h1>List of recommended books</h1>
+
+    <ul>
+        <?php foreach($filteredBooks as $book) : ?>
+            <a href="<?= $book['purchaseURL']?>">
+                <li>
+                    <?= $book['name']?> (Author: <?= $book['author']?>)
+                </li>
+            </a>
+        <?php endforeach; ?>
+    </ul>
+
     
     <?php include('templates/header.php'); ?>
 

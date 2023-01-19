@@ -1,23 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-100">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="./index.css">
     <title>PHP Tutorial</title>
 </head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="navbar-brand">Ninja Pizza</a>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Add Pizza</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<body class="h-full">
+    <div class="min-h-full">
